@@ -8,6 +8,8 @@ Colecciones mas frecuentes:
 -
 List<T>Parecidos a los arays pero con metodos adicionales para agregar, eliminar, ordenar, buscar, Etc
 -
+Solo se puede trabajar con un solo tipo de variable
+-
 Queue<T> Las colas. un elemento entra y uno sale. Primero en entrar-primero en salir
 -
 Stack<T> parecidos a los queue pero con algunas diferencias. primero en entrar-ultimo en salir
@@ -19,6 +21,39 @@ HashSet<T> Lista de valores sin ordenar
 Dictionary<Tkey, Tvalue> almacena elementos con estructura de clave - valor
 -
 SortedList<Tkey, Tvalue> igual que los dictionary pero ordenados
+*/
+/*
+Una coleccion es una clase, y requiere una instancia de la clase antes de comenzar a agregar elementos de esa coleccion
+
+lista sin valores
+var valores = new List<int>();
+lista con valores
+var valores = new List<int>{1,2,3,4};
+
+agregar
+valores.Add(5);
+
+elimina un elemento con el valor 7 de la lista
+valores.Remove(7);
+
+remover un valor de una posicion especifica 
+int indice = 0;
+valores.RemoveAt(indice);
+
+elimina todos los elementos 
+valores.Clear();
+
+ordenar mayor a menor
+valores.Sort();
+
+saber si existe un valor dentro de la lista
+valores.Contains(4);
+
+saber en que posicion se encuentra un valores
+int indice = valores.FindIndex(x => 4);
+Console.WriteLine(valores[indice]);
+
+
 */
 
 class MainClass {
@@ -75,5 +110,6 @@ class MainClass {
 			Console.WriteLine(el);
 		}
 
+	
   }
 }	
